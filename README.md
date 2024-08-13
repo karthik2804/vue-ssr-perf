@@ -4,7 +4,7 @@ TO run spin app
 npm install 
 spin build -up
 
-curl localhost:3000
+curl localhost:3000/home
 ```
 
 To run node app 
@@ -13,5 +13,5 @@ To run node app
 npm install
 node main.mjs
 
-curl localhost:3000
+curl localhost:3000/home
 ``
