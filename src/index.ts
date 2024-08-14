@@ -63,7 +63,7 @@ function getPageData(url: string): PageData {
         return {
             title: 'Home Page',
             pageType: 'home',
-            items: generateItems(100) // Generate 100 items
+            items: generateItems(10000) // Generate 100 items
         };
     } else if (url.startsWith('/profile')) {
         return {

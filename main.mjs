@@ -109,7 +109,7 @@ server.get('*', (req, res) => {
         const finalHtml = template
             .replace('<!--vue-ssr-title-->', pageData.title)
             .replace('<!--vue-ssr-outlet-->', html);
-        res.send(html)
+        res.send(finalHtml)
     })
 })
 
@@ -141,7 +141,7 @@ function getPageData(url) {
         return {
             title: 'Home Page',
             pageType: 'home',
-            items: generateItems(100) // Generate 100 items
+            items: generateItems(10000) // Generate 100 items
         };
     } else if (url.startsWith('/profile')) {
         return {
